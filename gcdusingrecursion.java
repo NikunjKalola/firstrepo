@@ -18,7 +18,8 @@ public class gcdusingrecurssion{
 	}
 }*/
 //using recursion
-public class gcdusingrecursion{
+//using 2nd mtehod 
+/*public class gcdusingrecursion{
 	public static void main(String[] args){
 		int a,b;
 		Scanner sc = new Scanner(System.in);
@@ -33,6 +34,28 @@ public class gcdusingrecursion{
 			return small;
 		}
 		return gcd(a,b,small=small-1);
+	}
+}*/
+// using 3rd very efficient method
+public class gcdusingrecursion{
+	public static void main(String[] args){
+		int a,b;
+		Scanner sc = new Scanner(System.in);
+		a = sc.nextInt();
+		b = sc.nextInt();
+		System.out.println(gcd(a,b));
+	}
+	public static int gcd(int a,int b){
+		if(a==b)
+			return a;
+		if(a%b==0)
+			return b;
+		if(b%a==0)
+			return a;
+		if(a>b)
+			return gcd(a%b,b);
+		else 
+			return gcd(a,b%a);
 	}
 }
 
