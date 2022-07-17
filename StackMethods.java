@@ -41,7 +41,7 @@ class Stack{
 		}
 	}
 }
-public class pushpoppeep{
+public class StackMethods{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		boolean b = true;
